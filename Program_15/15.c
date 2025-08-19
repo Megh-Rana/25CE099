@@ -43,4 +43,5 @@ int main()
     {
         return 0;
     }
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
 }
