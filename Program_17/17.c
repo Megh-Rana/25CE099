@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 int main()
 {
@@ -7,7 +8,7 @@ int main()
     printf("Welcome to Marathon.\n");
     while (distance<=10)
     {
-        printf("Minute %d : %Distance Covered : %f km\n",minutes,distance);
+        printf("Minute %d : Distance Covered : %.1f km\n",minutes,distance);
         distance = distance + 0.5;
         minutes++;
         sleep(1);
