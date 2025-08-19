@@ -3,28 +3,26 @@
 int main()
 
 {
-    int userpick,computerpick,stick=21;
-    printf("Welcome to Matchstick game! Please start the game by entering a number of matchstick from 1,2,3,4\n");
-
-    while (stick > 1)
+    int matchstick=21,user_choice,computer_choice;
+    do
     {
-        scanf("%d",&userpick);
-        if (userpick <= 4)
+        input:
+        printf("Please enter number of matchstick 1,2,3 or 4\n");
+        scanf("%d",&user_choice);
+        if(user_choice<0 || user_choice>4)
         {
-        stick = stick - userpick;
-        printf("Remaining stick is %d\n",stick);
-        computerpick = 5 - userpick;
-        printf("Computer pick is %d\n",computerpick);
-        stick = stick - computerpick;
-        printf("Remaining stick is %d\n",stick);
+        printf("Invalid Choice!\n");
+        goto input;
         }
-        else
-        {
-            printf("Please select 1-4 sticks!\n");
-            return 1;
-        }
+        matchstick -= user_choice;
+        printf("Number of remaining matchsticks: %d\n",matchstick);
+        computer_choice = 5 - user_choice; 
+        printf("Computer chose %d sticks\n",computer_choice);
+        matchstick -= computer_choice;
+        printf("Number of remaining matchsticks: %d\n",matchstick);
     }
-    printf("Computer Won! Better luck next time\n");
+    while(matchstick>1);
+    printf("Computer Won!\n");
     printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
 
     return 0;
