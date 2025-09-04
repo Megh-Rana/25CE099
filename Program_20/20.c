@@ -2,15 +2,22 @@
 
 int main()
 {
-    int n=20;
-    int id[21]={1,2,3,4,5,6,7,8,9,10,11,'\0',12,13,15,16,17,18,19,20};
-    for(int i=0;i<n;i++)
+    int n,actual_sum,ideal_sum;
+    printf("Plese enter number of ids to be entered:\n");
+    scanf("%d",&n);
+    int ids[n];
+    ideal_sum=n*(n+1)/2;
+    printf("Please enter the ids:\n");
+    for(int i=0;i<n-1;i++)
     {
-        if(id[i]=='\0')
-        {
-            printf("ID number %d is empty\n",i+1);
-        }
+        scanf("%d",&ids[i]);
     }
+    actual_sum=0;
+    for(int i=0;i<n-1;i++)
+    {
+        actual_sum+=ids[i];
+    }
+    printf("Missing ID is: %d\n",ideal_sum-actual_sum);
     printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
 
     return 0;
