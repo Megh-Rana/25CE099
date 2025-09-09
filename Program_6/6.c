@@ -8,7 +8,7 @@ int main()
     scanf("%f",&celsius);
     farenheit=(celsius*9/5)+32;
     printf("The temperature in farenheit is %f\n",farenheit);
-    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
 
     return 0;
 }

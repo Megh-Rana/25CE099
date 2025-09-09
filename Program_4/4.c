@@ -23,7 +23,7 @@ printf("The range of double data type is [%e,%e]\n",DBL_MIN,DBL_MAX);
 printf("The range of long data type is [%e,%e]\n",LONG_MIN,LONG_MAX);
 
 
-printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
+printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
 
 return 0;
 }

@@ -41,7 +41,7 @@ int main()
     }
 
     printf("Your total bill is %d\n",totalbill);
-    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
 
     return 0;
 }

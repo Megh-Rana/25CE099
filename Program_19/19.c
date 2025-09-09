@@ -142,4 +142,6 @@ for(i=1;i<=4;i++)
         }
         printf("\n");
     }
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
+
 }

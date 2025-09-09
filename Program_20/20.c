@@ -18,7 +18,7 @@ int main()
         actual_sum+=ids[i];
     }
     printf("Missing ID is: %d\n",ideal_sum-actual_sum);
-    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
 
     return 0;
 }

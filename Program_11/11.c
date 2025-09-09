@@ -18,6 +18,6 @@ int main()
                 (marks >=60 && marks < 70)?printf("Your grade is D"):
                     printf("Your grade is F");
     printf("\n");
-    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
     return 0;
 }

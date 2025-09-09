@@ -21,7 +21,7 @@ int main()
         printf("You get 20 percent discount!\n");
         printf("Your final bill amount is %f\n",amount-(amount*20/100));
     }
-    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
 
     return 0;
 }

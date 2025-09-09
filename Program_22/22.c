@@ -55,6 +55,6 @@ int main() {
 
     // Display the final seating chart
     display_chart(seating_chart);
-
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
     return 0;
 }

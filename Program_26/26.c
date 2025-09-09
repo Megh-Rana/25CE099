@@ -19,7 +19,7 @@ int main()
     semiperimeter=(a+b+c)/2;
     area=sqrt((semiperimeter)*(semiperimeter-a)*(semiperimeter-b)*(semiperimeter-c));
     printf("Valid Triangle, Area is %0.2f\n",area);
-    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
 
     return 0;
 }

@@ -62,5 +62,7 @@ int main() {
     printf("Test Case 5 Input: [5, 5, 5, 5, 5]\n");
     printf("Maximum Profit: %d\n\n", profit5); // Expected: 0
 
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
+
     return 0;
 }

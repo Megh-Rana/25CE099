@@ -25,6 +25,7 @@ int main()
     printf("Number of books: %d\n",getTotalBooks());
     borrowBook("Harry Potter");
     printf("Fine: %0.2f",calculateFine(10));
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
 }
 
 void displayBooks()

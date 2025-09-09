@@ -34,6 +34,6 @@ void main()
     printf("Number of negative numbers are %d\n",negative);
     printf("Number of even numbers are %d\n",even);
     printf("Number of odd numbers are %d\n",odd);
-    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
 
 }

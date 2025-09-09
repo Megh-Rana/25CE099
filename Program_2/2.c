@@ -57,6 +57,6 @@ int main()
         printf("Do you want to calculate for another park? 0 for no, 1 for yes\n");
         scanf("%d",&loop);
     }
-    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25TCE3FA\n");
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
 
 }

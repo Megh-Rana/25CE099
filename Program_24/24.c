@@ -81,7 +81,8 @@ int main()
         printf("Please enter proper option!\n");
     }
 }
-    return 0; 
+    printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
+        return 0; 
 }
 
 int str_length(char string[])
