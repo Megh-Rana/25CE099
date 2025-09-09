@@ -6,7 +6,7 @@ This repository contains all the code submissions for the laboratory practicals 
 ### Student & Course Information
 
 - **Name:** Megh Rana
-- **Student ID:** 25TCE3FA
+- **Student ID:** 25CE099
 - **Branch:** Computer Engineering (CE)
 - **Institution:** Chandubhai S. Patel Institute of Technology (CSPIT), CHARUSAT
 
