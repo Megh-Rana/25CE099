@@ -1,24 +1,31 @@
 #include <stdio.h>
 #include <math.h>
 
-int main()
-{
-    float a,b,c,semiperimeter,area;
+int is_valid_triangle(float a, float b, float c) {
+    if (a <= 0 || b <= 0 || c <= 0)
+        return 0;
+    if (a + b <= c || a + c <= b || b + c <= a)
+        return 0;
+    return 1;
+}
+
+float triangle_area(float a, float b, float c) {
+    float s = (a + b + c) / 2;
+    return sqrt(s * (s - a) * (s - b) * (s - c));
+}
+
+int main() {
+    float a, b, c;
     printf("Please Enter value of side A , B , and C\n");
-    scanf("%f%f%f",&a,&b,&c);
-    if(a < 0 || b < 0 || c < 0)
-    {
-        printf("Please enter positive side lengths\n");
+    scanf("%f%f%f", &a, &b, &c);
+
+    if (!is_valid_triangle(a, b, c)) {
+        printf("Invalid Triangle, the lengths do not form a valid triangle\n");
         return 1;
     }
-    if(a + b <= c )
-    {
-        printf("Invalid Triangle, the lengths do not form a valid triangle");
-        return 1;
-    }
-    semiperimeter=(a+b+c)/2;
-    area=sqrt((semiperimeter)*(semiperimeter-a)*(semiperimeter-b)*(semiperimeter-c));
-    printf("Valid Triangle, Area is %0.2f\n",area);
+
+    float area = triangle_area(a, b, c);
+    printf("Valid Triangle, Area is %0.2f\n", area);
     printf("Name: Megh Rana\nBranch: CE CSPIT\nStudent ID: 25CE099\n");
 
     return 0;
