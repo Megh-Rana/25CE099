@@ -3,7 +3,7 @@
 // Recursive function to calculate the nth Fibonacci number
 int fibonacci(int n) {
     if (n == 0) {
-        return 0;
+        return 1;
     } else if (n == 1) {
         return 1;
     } else {
@@ -23,7 +23,7 @@ int main() {
         printf("Fibonacci Series: ");
         for (int i = 0; i < num_terms; i++) {
             // We call fibonacci(i + 1) to start the sequence from 1, 1, ...
-            printf("%d ", fibonacci(i + 1));
+            printf("%d ", fibonacci(i));
         }
         printf("\n");
     }
