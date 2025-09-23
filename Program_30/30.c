@@ -2,16 +2,16 @@
 #include <stdlib.h>
 
 int input();
-void get_prices(int *prices, int items);
-void sort_prices(int *prices, int *sorted_prices, int items);
-void display(int *arr, int items);
+void get_prices(float *prices, int items);
+void sort_prices(float *prices, float *sorted_prices, int items);
+void display(float *arr, int items);
 
 int main()
 {
     int items;
     items = input();
-    int *prices = malloc(items * sizeof(int));
-    int *sorted_prices = malloc(items * sizeof(int));
+    float *prices = malloc(items * sizeof(float));
+    float *sorted_prices = malloc(items * sizeof(float));
 
     get_prices(prices, items);
     sort_prices(prices, sorted_prices, items);
@@ -27,21 +27,27 @@ int input()
 {
     int items;
     printf("Enter number of items: ");
-    scanf("%d", &items);
+    while (scanf("%d", &items) != 1 || items <= 0) {
+        printf("Only numerical values are allowed. Enter number of items: ");
+        while(getchar() != '\n'); // clear input buffer
+    }
     return items;
 }
 
-void get_prices(int *prices, int items)
+void get_prices(float *prices, int items)
 {
     printf("Enter the prices of %d items:\n", items);
     for (int i = 0; i < items; i++)
     {
         printf("Item %d: ", i + 1);
-        scanf("%d", &prices[i]);
+        while (scanf("%f", &prices[i]) != 1) {
+            printf("Only numerical values are allowed. Item %d: ", i + 1);
+            while(getchar() != '\n'); // clear input buffer
+        }
     }
 }
 
-void sort_prices(int *prices, int *sorted_prices, int items)
+void sort_prices(float *prices, float *sorted_prices, int items)
 {
     for (int i = 0; i < items; i++)
     {
@@ -54,7 +60,7 @@ void sort_prices(int *prices, int *sorted_prices, int items)
         {
             if (sorted_prices[j] > sorted_prices[j + 1])
             {
-                int temp = sorted_prices[j];
+                float temp = sorted_prices[j];
                 sorted_prices[j] = sorted_prices[j + 1];
                 sorted_prices[j + 1] = temp;
             }
@@ -62,12 +68,12 @@ void sort_prices(int *prices, int *sorted_prices, int items)
     }
 }
 
-void display(int *arr, int items)
+void display(float *arr, int items)
 {
     printf("Sorted prices in ascending order:\n");
     for (int i = 0; i < items; i++)
     {
-        printf("%d ", arr[i]);
+        printf("%.2f ", arr[i]);
     }
     printf("\n");
 }
